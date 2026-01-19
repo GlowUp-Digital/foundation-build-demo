@@ -197,8 +197,8 @@ footer {
   }
 
   nav {
-    flex-wrap: nowrap;       /* horizontal row */
-    justify-content: center;  /* centered under company name */
+    flex-wrap: wrap;       /* horizontal row */
+    justify-content: left;  /* left-aligned under company name */
     gap: 8px;                /* space between tabs */
   }
 }

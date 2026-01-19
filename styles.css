@@ -29,7 +29,6 @@ body {
 /* ==============================
    HEADER & NAVIGATION
 ============================== */
-/* Header */
 header {
   background: #F5FBE6; /* main light color */
   padding: 20px 36px;
@@ -78,37 +77,6 @@ nav .btn {
 nav .btn:hover {
   background: #233D4D; /* accent dark on hover */
 }
-
-/* Mobile menu */
-.mobile-menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    flex-direction: column;
-    background: #F5FBE6;
-    width: 200px;
-    display: none;
-    padding: 12px;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-  }
-  nav.mobile-open {
-    display: flex;
-  }
-  .mobile-menu-toggle {
-    display: block;
-    color: #215E61;
-  }
-}
-
-
 
 /* ==============================
    HERO
@@ -231,9 +199,8 @@ footer {
 }
 
 /* ==============================
-   MOBILE NAV
+   MOBILE MENU TOGGLE
 ============================== */
-
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -242,13 +209,16 @@ footer {
 }
 
 .menu-toggle span {
+  display: block;
   width: 26px;
   height: 3px;
-  background: #FE7F2D;
+  background-color: #FE7F2D;
   border-radius: 2px;
 }
 
-/* Mobile */
+/* ==============================
+   MOBILE NAV
+============================== */
 @media (max-width: 768px) {
   nav {
     position: absolute;

@@ -30,7 +30,7 @@ body {
    HEADER & NAVIGATION
 ============================== */
 header {
-  background: #F5FBE6; /* main light color */
+  background: #1B211A; /* same as footer */
   padding: 20px 36px;
 }
 
@@ -46,7 +46,7 @@ header {
 .company-name {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #215E61; /* dark green */
+  color: #FFF; /* white text */
 }
 
 nav {
@@ -57,7 +57,7 @@ nav {
 }
 
 nav a {
-  color: #233D4D; /* dark blue/teal */
+  color: #FFF; /* white links */
   text-decoration: none;
   font-weight: 600;
   padding: 6px 12px;
@@ -66,17 +66,17 @@ nav a {
 }
 
 nav a:hover {
-  background: #FE7F2D; /* accent orange */
+  background: #215E61; /* match "Get Ready" button */
   color: #FFF;
 }
 
 nav .btn {
-  background: #215E61; /* slightly darker green than container */
+  background: #215E61; /* "Get Ready" button */
   color: #FFF;
 }
 
 nav .btn:hover {
-  background: #233D4D; /* accent dark on hover */
+  background: #8BAE66; /* lighter green hover for button */
 }
 
 /* ==============================
@@ -193,7 +193,7 @@ footer {
   .subtitle { font-size: 1rem; }
   .btn { padding: 12px 28px; }
 
-  /* Stack nav links vertically on small screens */
+  /* Stack nav links vertically on small screens, below company name */
   nav {
     flex-direction: column;
     width: 100%;

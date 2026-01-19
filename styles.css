@@ -197,9 +197,9 @@ footer {
   }
 
   nav {
-    flex-wrap: wrap;       /* horizontal row */
+    flex-wrap: row;       /* horizontal row */
     justify-content: left;  /* left-aligned under company name */
-    gap: 8px;                /* space between tabs */
+    gap: 12Spx;                /* space between tabs */
   }
 }
 

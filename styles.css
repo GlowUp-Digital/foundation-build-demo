@@ -29,54 +29,85 @@ body {
 /* ==============================
    HEADER & NAVIGATION
 ============================== */
+/* Header */
 header {
-  background: #1B211A;
+  background: #F5FBE6; /* main light color */
   padding: 20px 36px;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between; /* company left, nav right */
+  justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 
 .company-name {
-  font-size: 1.8rem;       /* slightly bigger for visibility */
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #FE7F2D;          /* standout color from palette */
+  color: #215E61; /* dark green */
 }
 
 nav {
   display: flex;
-  align-items: center;      /* ensure horizontal alignment */
-  gap: 5px;                /* spacing between nav links */
+  gap: 18px;
+  align-items: center;
 }
 
 nav a {
-  color: #FFF0DD;
+  color: #233D4D; /* dark blue/teal */
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 6px;
   transition: all 0.25s ease;
 }
 
 nav a:hover {
-  background: #215E61;
-  color: #FFF0DD;
+  background: #FE7F2D; /* accent orange */
+  color: #FFF;
 }
 
-/* CTA button special color */
-.btn-cta {
-  background: #233D4D;      /* darker than other container sections */
-  padding: 10px 20px;
+nav .btn {
+  background: #215E61; /* slightly darker green than container */
+  color: #FFF;
 }
 
-.btn-cta:hover {
-  background: #215E61;      /* hover effect */
+nav .btn:hover {
+  background: #233D4D; /* accent dark on hover */
 }
+
+/* Mobile menu */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: #F5FBE6;
+    width: 200px;
+    display: none;
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  }
+  nav.mobile-open {
+    display: flex;
+  }
+  .mobile-menu-toggle {
+    display: block;
+    color: #215E61;
+  }
+}
+
 
 
 /* ==============================

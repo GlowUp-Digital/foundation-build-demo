@@ -40,7 +40,7 @@ header {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .company-name {
@@ -53,6 +53,7 @@ nav {
   display: flex;
   gap: 18px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -191,52 +192,23 @@ footer {
   .hero h1 { font-size: 2.2rem; }
   .subtitle { font-size: 1rem; }
   .btn { padding: 12px 28px; }
+
+  /* Stack nav links vertically on small screens */
+  nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.9rem; }
   .section p { font-size: 0.95rem; }
-}
-
-/* ==============================
-   MOBILE MENU TOGGLE
-============================== */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 26px;
-  height: 3px;
-  background-color: #FE7F2D;
-  border-radius: 2px;
-}
-
-/* ==============================
-   MOBILE NAV
-============================== */
-@media (max-width: 768px) {
-  nav {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: #233D4D;
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px;
-    border-radius: 12px;
-    display: none;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
 }

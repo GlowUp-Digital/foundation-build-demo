@@ -199,7 +199,7 @@ footer {
   nav {
     flex-wrap: row;       /* horizontal row */
     justify-content: left;  /* left-aligned under company name */
-    gap: 12Spx;                /* space between tabs */
+    gap: 5px;                /* space between tabs */
   }
 }
 
